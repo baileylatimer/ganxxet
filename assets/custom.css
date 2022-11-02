@@ -63,3 +63,9 @@ a {
   font-weight: bold;
   letter-spacing: 0 !important;
 }
+
+.display-italic {
+  font-family: 'Lyon Display', Times New Roman,Georgia,"serif",system-ui;
+  font-style: italic;
+  /* text-transform: capitalize; */
+}
