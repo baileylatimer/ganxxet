@@ -73,3 +73,28 @@ a {
   font-family: 'Lyon Display', Times New Roman,Georgia,"serif",system-ui !important;
   font-style: italic;
 }
+
+
+/* MEDIA
+==================== */
+@media screen and (min-width: 768px) {
+  .mobile-img {
+    display: none !important;
+  }
+}
+
+.mobile-img {
+  width: 100vw;
+}
+
+.desktop-img { 
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .desktop-img {
+    display: none !important;
+  }
+}

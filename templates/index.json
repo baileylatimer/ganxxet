@@ -123,133 +123,44 @@
         "enable_gutter": true
       }
     },
-    "promo-grid2": {
-      "type": "promo-grid",
-      "blocks": {
-        "promo2-0": {
-          "type": "advanced",
-          "settings": {
-            "subheading": "Limited time",
-            "heading": "Announce your promotion",
-            "textarea": "Include the smaller details of your promotion in text below the title.",
-            "cta_text1": "Shop This",
-            "cta_link1": "shopify:\/\/collections\/all",
-            "cta_text2": "Shop All",
-            "cta_link2": "",
-            "video_url": "",
-            "width": "100",
-            "height": 720,
-            "text_size": 120,
-            "text_align": "vertical-center horizontal-center",
-            "focal_point": "80% 50%",
-            "color_accent": "rgba(0,0,0,0)",
-            "boxed": false,
-            "framed": false
-          }
-        },
-        "promo2-1": {
-          "type": "sale_collection",
-          "settings": {
-            "sale_collection": "",
-            "top_text": "Up to",
-            "middle_text": "50% off",
-            "bottom_text": "Select products",
-            "width": "50",
-            "color_tint": "#000000",
-            "color_tint_opacity": 0,
-            "boxed": false,
-            "framed": true
-          }
-        },
-        "promo2-2": {
-          "type": "sale_collection",
-          "settings": {
-            "sale_collection": "",
-            "top_text": "Up to",
-            "middle_text": "50% off",
-            "bottom_text": "Select products",
-            "width": "50",
-            "color_tint": "#000000",
-            "color_tint_opacity": 0,
-            "boxed": false,
-            "framed": true
-          }
-        }
-      },
-      "block_order": [
-        "promo2-0",
-        "promo2-1",
-        "promo2-2"
-      ],
+    "e47a1961-0fc3-48d4-a843-948205e60cd7": {
+      "type": "feature-row",
       "settings": {
-        "full_width": false,
-        "gutter_size": 20,
-        "space_above": false,
-        "space_below": false
-      }
-    },
-    "featured-collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured collection",
-        "home_featured_products": "",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
-      }
-    },
-    "background-image-text": {
-      "type": "background-image-text",
-      "settings": {
-        "subtitle": "Impressive",
-        "title": "Large image with text box",
-        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
-        "button_label": "",
-        "button_link": "shopify:\/\/collections\/all",
-        "focal_point": "80% 0",
-        "layout": "left",
-        "height": 750,
-        "framed": false,
+        "width": "full-width",
+        "bg_color": "#eae5e1",
+        "text_color": "",
+        "margin_top": true,
+        "margin_btm": true,
+        "padding_top": false,
+        "padding_btm": false,
+        "mob_image": "shopify:\/\/shop_images\/AdobeStock_209849121.jpg",
+        "image": "shopify:\/\/shop_images\/AdobeStock_209849121.jpg",
+        "natural_img": true,
+        "enable_custom_banner": false,
+        "custom_banner_url": "",
+        "custom_banner_autoplay": true,
+        "custom_banner_loop": true,
+        "custom_banner_mute": false,
+        "portrait": false,
         "parallax": true,
-        "parallax_direction": "top"
-      }
-    },
-    "blog-posts": {
-      "type": "blog-posts",
-      "settings": {
-        "title": "From the journal",
-        "blog": "news",
-        "post_limit": 3,
-        "blog_show_tags": false,
-        "blog_show_date": true,
-        "blog_show_comments": false,
-        "blog_show_author": false,
-        "view_all": true,
-        "blog_image_size": "wide",
-        "divider": false
-      }
-    },
-    "map": {
-      "type": "map",
-      "settings": {
-        "map_title": "Our retail store",
-        "address": "<p>301 Front St W<br>Toronto, Canada<\/p><p>Mon - Fri, 8:30am - 10:30pm<br>Saturday, 8:30am - 10:30pm<br>Sunday, 8:30am - 10:30pm<\/p>",
-        "map_address": "301 Front St W, Toronto, ON M5V 2T6",
-        "api_key": "",
-        "show_button": true,
-        "background_image_position": "center center"
+        "layout": "left",
+        "image_height": "40vw",
+        "subtitle": "Our mission",
+        "title": "Giving back",
+        "text": "Since our start with Ganxxet in 2014, it has never been just about selling fiber. To create a community, promote self-love and self-care and be committed to protecting Mother Earth has instead been our goal. From the start we have always made the effort to use recycled cotton, sustainable materials and organic fibers. We are continuously innovating and improving to provide the most eco-friendly fibers in order to reduce our impact on the planet. In 2021, we have gone a step further in our work to protect the planet. We have joined two organizations, 1% for the Planet and One Tree Planted so no matter what other campaigns we are running during the year, we are committed to permanently donate to these two organizations as a part of our duty to give back.",
+        "text_display": false,
+        "button_label": "",
+        "button_link": "",
+        "btn_color": "",
+        "btn_text_color": "",
+        "btn_hover_color": "",
+        "btn_text_hover_color": ""
       }
     }
   },
   "order": [
     "slideshow",
     "featured-collections",
-    "promo-grid2",
-    "featured-collection",
-    "background-image-text",
-    "blog-posts",
-    "map"
+    "e47a1961-0fc3-48d4-a843-948205e60cd7"
   ]
 }
