@@ -28,7 +28,7 @@
     <div class="collection-sidebar__group">
       <button
           type="button"
-          class="collapsible-trigger collapsible-trigger-btn collapsible--auto-height{% unless collapsed %} is-open{% endunless %} tag-list__header"
+          class="collapsible-trigger text-overline collapsible-trigger-btn collapsible--auto-height{% unless collapsed %} is-open{% endunless %} tag-list__header"
           aria-controls="{{ location }}-{{ filter_index }}{% if filter_id %}-{{ filter_id }}{% endif %}"
           data-collapsible-id="{{ filter_id }}">
           {{ filter.label | escape }}
@@ -36,7 +36,7 @@
       </button>
       <div
       id="{{ location }}-{{ filter_index }}-{{ filter_id }}"
-      class="collapsible-content collapsible-content--sidebar{% unless collapsed %} is-open{% endunless %}"
+      class="collapsible-content text-overline  collapsible-content--sidebar{% unless collapsed %} is-open{% endunless %}"
       data-collapsible-id="{{ filter_id }}"
       {% unless collapsed %}style="height: auto;"{% endunless %}>
         <div class="collapsible-content__inner">

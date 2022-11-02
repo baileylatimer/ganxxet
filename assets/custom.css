@@ -86,6 +86,10 @@ a {
   text-transform: uppercase;
 }
 
+.tag {
+  text-transform: capitalize;
+  font-weight: normal;
+}
 
 /* MEDIA
 ==================== */
