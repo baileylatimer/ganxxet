@@ -64,8 +64,12 @@ a {
   letter-spacing: 0 !important;
 }
 
+.display-text {
+  font-family: 'Lyon Display', Times New Roman,Georgia,"serif",system-ui !important;
+  text-transform: capitalize !important;
+}
+
 .display-italic {
-  font-family: 'Lyon Display', Times New Roman,Georgia,"serif",system-ui;
+  font-family: 'Lyon Display', Times New Roman,Georgia,"serif",system-ui !important;
   font-style: italic;
-  /* text-transform: capitalize; */
 }

@@ -1,11 +1,15 @@
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
 <div class="page-width">
-  {%- if section.settings.title != blank -%}
-    <div class="section-header">
-      <h2 class="section-header__title">{{ section.settings.title }}</h2>
-    </div>
+  <div class="section-header">
+  {%- if section.settings.subtitle != blank -%}
+  <p class="hero__top-subtitle display-italic">{{ section.settings.subtitle }}</p>
   {%- endif -%}
+  {%- if section.settings.title != blank -%}
+  <h2 class="section-header__title">{{ section.settings.title }}</h2>
+  {%- endif -%}
+  </div>
+
 
   <div class="grid grid--uniform{% unless section.settings.enable_gutter %} grid--no-gutters{% endunless %}">
     {%- liquid
@@ -64,6 +68,12 @@
   "class": "index-section",
   "max_blocks": 15,
   "settings": [
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Subtitle"
+    },
     {
       "type": "text",
       "id": "title",
