@@ -19,7 +19,7 @@
       endif
     -%}
 
-    <div class="index-section">
+    <div class="index-section bg-primary-light">
       <div class="section--divider">
         <div class="page-width footer-promotions">
           <div class="grid grid--flush-bottom">
@@ -73,10 +73,13 @@
                   </a>
                 {%- endif -%}
                 {%- if block.settings.title != blank -%}
-                  <div class="h3">{{ block.settings.title }}</div>
+                  <h3 class="text-center lg:text-left">{{ block.settings.title }}</h3>
                 {%- endif -%}
                 {%- if block.settings.text != blank -%}
-                  <div class="rte-setting text-spacing">{{ block.settings.text }}</div>
+                  <p class="rte-setting text-spacing text-center lg:text-left">{{ block.settings.text }}</p>
+                {%- endif -%}
+                {%- if block.settings.name != blank -%}
+                  <p class="text-overline text-center lg:text-left">{{ block.settings.name }}</p>
                 {%- endif -%}
                 {%- if block.settings.button_label != blank -%}
                   <a href="{{ block.settings.button_link }}" class="btn btn--secondary btn--small">
@@ -155,10 +158,16 @@
           "default": "Site-wide promotion"
         },
         {
-          "type": "richtext",
+          "type": "text",
           "id": "text",
           "label": "t:sections.footer-promotions.blocks.column.settings.text.label",
           "default": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.</p>"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name",
+          "default": "Name"
         },
         {
           "type": "text",

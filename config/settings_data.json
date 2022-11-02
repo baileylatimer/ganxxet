@@ -212,45 +212,58 @@
       "footer-promotions": {
         "type": "footer-promotions",
         "blocks": {
-          "footer-promotions-0": {
-            "type": "promotion",
-            "settings": {
-              "enable_image": true,
-              "title": "Site-wide promotion",
-              "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
-              "button_label": "Optional button",
-              "button_link": ""
-            }
-          },
           "footer-promotions-1": {
             "type": "promotion",
             "settings": {
-              "enable_image": true,
-              "title": "Site-wide promotion",
-              "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
-              "button_label": "Optional button",
+              "enable_image": false,
+              "title": "What people are saying",
+              "text": "",
+              "name": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "footer-promotions-0": {
+            "type": "promotion",
+            "settings": {
+              "enable_image": false,
+              "title": "",
+              "text": "I will only ever buy cord from this business. They are amazing and so <br>quick and the quality of the cord is perfect. Wouldn’t ever buy from <br>anywhere else!",
+              "name": "Rachel H.",
+              "button_label": "",
               "button_link": ""
             }
           },
           "footer-promotions-2": {
             "type": "promotion",
             "settings": {
-              "enable_image": true,
-              "title": "Site-wide promotion",
-              "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
-              "button_label": "Optional button",
+              "enable_image": false,
+              "title": "",
+              "text": "Ganxxet is amazing! Always fast shipping, correct products, and even better quality. So glad a fantastic supplier exists!",
+              "name": "Madison L.",
+              "button_label": "",
               "button_link": ""
             }
           }
         },
         "block_order": [
-          "footer-promotions-0",
           "footer-promotions-1",
+          "footer-promotions-0",
           "footer-promotions-2"
         ],
         "settings": {
           "hide_homepage": false,
           "image_size": "wide"
+        }
+      },
+      "testimonials": {
+        "type": "testimonials",
+        "settings": {
+          "title": "Testimonials",
+          "align_text": "center",
+          "round_images": true,
+          "color_background": "#f9f9f9",
+          "color_text": "#1c1d1d"
         }
       }
     },

@@ -156,11 +156,65 @@
         "btn_hover_color": "",
         "btn_text_hover_color": ""
       }
+    },
+    "29ff4c6c-8a3c-47d5-b59a-23d42f836ff6": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--16097796554915__29ff4c6c-8a3c-47d5-b59a-23d42f836ff6-166736627536574605-0": {
+          "type": "text_block",
+          "settings": {
+            "icon": "plant",
+            "title": "Unique Yarns & Cords",
+            "text": "<p>By working hand-in-hand & exclusively with our suppliers, GANXXET is able to produce unique and customized size cords with the best quality. <\/p>"
+          }
+        },
+        "template--16097796554915__29ff4c6c-8a3c-47d5-b59a-23d42f836ff6-166736627536574605-1": {
+          "type": "text_block",
+          "settings": {
+            "icon": "sales-tag",
+            "title": "Best Quality Price",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.<\/p>"
+          }
+        },
+        "template--16097796554915__29ff4c6c-8a3c-47d5-b59a-23d42f836ff6-166736627536574605-2": {
+          "type": "text_block",
+          "settings": {
+            "icon": "gift",
+            "title": "Give $15 get $15",
+            "text": "<p>Give your friends $15 off their first order of $100+ and get $15 for each successful referral. It’s our way to say thanks for joining GANXXET and for buying consciously make fiber . Refer a Friend <\/p>"
+          }
+        },
+        "e0fd900d-c7e8-4e43-999e-9d6f7a9f826a": {
+          "type": "text_block",
+          "settings": {
+            "icon": "shield",
+            "title": "Buy with Confidence",
+            "text": "<p>Not sure about a specific fiber? We got you! get sample fibers from GANXXET. Have the look, touch & feel experience before committing to an entire roll. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16097796554915__29ff4c6c-8a3c-47d5-b59a-23d42f836ff6-166736627536574605-0",
+        "template--16097796554915__29ff4c6c-8a3c-47d5-b59a-23d42f836ff6-166736627536574605-1",
+        "template--16097796554915__29ff4c6c-8a3c-47d5-b59a-23d42f836ff6-166736627536574605-2",
+        "e0fd900d-c7e8-4e43-999e-9d6f7a9f826a"
+      ],
+      "settings": {
+        "subtitle": "Why Ganxxet?",
+        "title": "Unique Quality at unbeatable prices",
+        "align_text": "center",
+        "desktop_columns_per_row": 4,
+        "icon_color": "#000",
+        "button_label": "",
+        "button_link": "",
+        "divider": false
+      }
     }
   },
   "order": [
     "slideshow",
     "featured-collections",
-    "e47a1961-0fc3-48d4-a843-948205e60cd7"
+    "e47a1961-0fc3-48d4-a843-948205e60cd7",
+    "29ff4c6c-8a3c-47d5-b59a-23d42f836ff6"
   ]
 }
