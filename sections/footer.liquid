@@ -31,8 +31,8 @@
       {%- assign row_width = 0 -%}
       {%- for block in section.blocks -%}
         {%- assign row_width = row_width | plus: block.settings.container_width -%}
-        {%- if row_width > 100 -%}
-          <div class="footer__clear small--hide"></div>
+        {%- if row_width > 105 -%}
+ 
           {%- assign row_width = row_width | minus: 100 -%}
         {%- endif -%}
 

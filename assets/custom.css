@@ -116,3 +116,13 @@ a {
     text-align: left !important
   }
 }
+
+.grid {
+  display: block;
+}
+
+@media only screen and (min-width: 960px) {
+[data-type="newsletter"] {
+  width: 25% !important
+}
+}
