@@ -126,3 +126,9 @@ a {
   width: 25% !important
 }
 }
+
+@media only screen and (max-width: 960px) {
+  .feature-row__text--right {
+   flex-direction: column-reverse;
+  }
+}
