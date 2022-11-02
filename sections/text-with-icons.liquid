@@ -6,15 +6,14 @@
   data-section-type="text-with-icons"
 >
   <div class="page-width">
-    {%- if section.settings.title != blank -%}
-      <div
-        class="
-          text-with-icons__title
-          section-header"
-      >
-        <h2 class="text-{{ section.settings.align_text }}">{{ section.settings.title }}</h2>
-      </div>
-    {%- endif -%}
+    <div class="section-header">
+      {%- if section.settings.subtitle != blank -%}
+      <p class="hero__top-subtitle display-italic">{{ section.settings.subtitle }}</p>
+      {%- endif -%}
+      {%- if section.settings.title != blank -%}
+      <h2 class="section-header__title">{{ section.settings.title }}</h2>
+      {%- endif -%}
+    </div>
     <div
       class="
         text-with-icons__blocks
@@ -72,7 +71,7 @@
             {% endcase %}
           </div>
           <div class="text-with-icons__block-title">
-            <h3>{{ block.settings.title }}</h3>
+            <h4 class="text-overline mb-1">{{ block.settings.title }}</h4>
           </div>
           <div class="text-with-icons__block-text">
             {{ block.settings.text }}
@@ -103,6 +102,12 @@
   "name": "Text columns with icons",
   "class": "index-section",
   "settings": [
+  {
+    "type": "text",
+    "id": "subtitle",
+    "label": "Subtitle",
+    "default": "Subtitle"
+  },
     {
       "type": "text",
       "id": "title",

@@ -73,6 +73,14 @@
   margin-bottom: 1.5rem
 }
 
+.mb-4 {
+  margin-bottom: 1rem
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem
+}
+
 .block {
   display: block
 }
@@ -158,6 +166,10 @@
 
 .italic {
   font-style: italic
+}
+
+.overline {
+  text-decoration-line: overline
 }
 
 .blur {
