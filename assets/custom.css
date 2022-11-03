@@ -1,5 +1,6 @@
 :root {
   --color-primary-light: #EAE5E1;
+  --color-contrast-higher: #161616;
 }
 
 .bg-primary-light {
@@ -135,4 +136,23 @@ a {
   .feature-row__text--right {
    flex-direction: column-reverse;
   }
+}
+
+
+/* PDP
+============== */
+.product-single__title {
+  margin-top: 1rem;
+}
+
+.yotpo-icon-star {
+  color: var(--color-contrast-higher) !important;
+}
+
+.text-m {
+  margin-left: 0.5rem !important;
+}
+
+.promoted-products-box {
+  display: none !important
 }
