@@ -96,6 +96,40 @@
         "product_video_style": "muted"
       }
     },
+    "79bc44de-2d27-4c0e-9a92-5d9d0b3ba5d2": {
+      "type": "feature-row",
+      "settings": {
+        "width": "full-width",
+        "bg_color": "#e8e8e1",
+        "text_color": "",
+        "margin_top": true,
+        "margin_btm": true,
+        "padding_top": false,
+        "padding_btm": false,
+        "mob_image": "shopify:\/\/shop_images\/img.jpg",
+        "image": "shopify:\/\/shop_images\/img.jpg",
+        "natural_img": true,
+        "enable_custom_banner": false,
+        "custom_banner_url": "",
+        "custom_banner_autoplay": true,
+        "custom_banner_loop": true,
+        "custom_banner_mute": false,
+        "portrait": false,
+        "parallax": true,
+        "layout": "left",
+        "image_height": "40vw",
+        "subtitle": "Our promise",
+        "title": "Buy with confidence",
+        "text": "Not sure about a specific fiber? We got you! get sample fibers from GANXXET. Have the look, touch &amp; feel experience before committing to an entire roll.",
+        "text_display": false,
+        "button_label": "",
+        "button_link": "",
+        "btn_color": "",
+        "btn_text_color": "",
+        "btn_hover_color": "",
+        "btn_text_hover_color": ""
+      }
+    },
     "sub": {
       "type": "product-full-width",
       "disabled": true,
@@ -103,94 +137,29 @@
         "max_width": true
       }
     },
-    "background-image-text": {
-      "type": "background-image-text",
-      "settings": {
-        "subtitle": "Impressive",
-        "title": "About your brand",
-        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "focal_point": "center",
-        "layout": "left",
-        "height": 550,
-        "framed": false,
-        "parallax": false,
-        "parallax_direction": "top"
-      }
-    },
-    "text-and-image": {
-      "type": "text-and-image",
-      "settings": {
-        "image_width": 700,
-        "subtitle": "",
-        "title": "About your brand",
-        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "primary",
-        "align_text": "left",
-        "layout": "right",
-        "divider": false
-      }
-    },
-    "text-and-image2": {
-      "type": "text-and-image",
-      "settings": {
-        "image_width": 700,
-        "subtitle": "",
-        "title": "About your brand",
-        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "primary",
-        "align_text": "left",
-        "layout": "left",
-        "divider": false
-      }
-    },
-    "testimonials": {
-      "type": "testimonials",
+    "1667515068d38e95b6": {
+      "type": "apps",
       "blocks": {
-        "testimonials-0": {
-          "type": "testimonial",
+        "7367702b-7a61-4c32-83c8-a337adb7fd8e": {
+          "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
           "settings": {
-            "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author's name",
-            "author_info": "Los Angeles, CA"
+            "product": "{{product}}"
           }
         },
-        "testimonials-1": {
-          "type": "testimonial",
+        "eb2b3c7a-b9dd-4cfb-87bb-7b488105dd89": {
+          "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/star-rating\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
           "settings": {
-            "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author's name",
-            "author_info": "Los Angeles, CA"
-          }
-        },
-        "testimonials-2": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author's name",
-            "author_info": "Los Angeles, CA"
+            "product": "{{product}}"
           }
         }
       },
       "block_order": [
-        "testimonials-0",
-        "testimonials-1",
-        "testimonials-2"
+        "7367702b-7a61-4c32-83c8-a337adb7fd8e",
+        "eb2b3c7a-b9dd-4cfb-87bb-7b488105dd89"
       ],
       "settings": {
-        "title": "Testimonials",
-        "align_text": "center",
-        "round_images": true,
-        "color_background": "#f9f9f9",
-        "color_text": "#1c1d1d"
+        "full_width": false,
+        "space_around": true
       }
     },
     "product-recommendations": {
@@ -215,11 +184,9 @@
   },
   "order": [
     "main",
+    "79bc44de-2d27-4c0e-9a92-5d9d0b3ba5d2",
     "sub",
-    "background-image-text",
-    "text-and-image",
-    "text-and-image2",
-    "testimonials",
+    "1667515068d38e95b6",
     "product-recommendations",
     "recently-viewed",
     "collection-return"
