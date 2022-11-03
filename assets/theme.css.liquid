@@ -2593,12 +2593,17 @@ button[disabled],html input[disabled]{
   text-decoration:none;
   text-align:center;
   white-space:normal;
-
+  
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  text-transform: uppercase;
+/* 
   font-size:calc(var(--typeBaseSize) - 4px);
   font-size:max(calc(var(--typeBaseSize) - 4px), 13px);
   font-weight:700;
   text-transform:uppercase;
-  letter-spacing:0.3em;
+  letter-spacing:0.3em; */
 
   display:inline-block;
   padding:11px 20px;
@@ -11722,10 +11727,10 @@ html[dir=rtl] .product-single__meta .rte{
     }
 
 .product__price{
-  color:{{ settings.color_price | default: "#1c1d1d" }};
+  /* color:{{ settings.color_price | default: "#1c1d1d" }}; */
   color:var(--colorPrice);
   margin-right:5px;
-  font-size:calc(var(--typeBaseSize) + 2px)
+  /* font-size:calc(var(--typeBaseSize) + 2px) */
 }
 
 .product__price.on-sale{

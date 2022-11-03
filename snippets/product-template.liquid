@@ -116,7 +116,7 @@
                   {{ product.title }}
                 </p>
               {%- else -%}
-                <h1 class="h2 product-single__title">
+                <h1 class="h2 product-single__title display-text" style="text-transform: capitalize !important">
                   {%- unless product.empty? -%}
                     {{ product.title }}
                   {%- else -%}
@@ -192,14 +192,14 @@
                         <span data-a11y-price class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
                       {%- endif -%}
 
-                      <span data-product-price
-                        class="product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}">
+                      <h1 data-product-price
+                        class="product__price display-text{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}">
                         {%- unless product.empty? -%}
                           {{ current_variant.price | money }}
                         {%- else -%}
                           {{ 1999 | money }}
                         {%- endunless -%}
-                      </span>
+                      </h1>
 
                       {%- if settings.product_save_amount -%}
                         {%- if settings.product_save_type == 'dollar' -%}
