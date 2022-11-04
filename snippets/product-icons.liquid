@@ -1,0 +1,32 @@
+
+<div class="flex justify-between items-center flex-col lg:flex-row bg-primary-light px-6 py-6 mb-6">
+
+  {% if product.metafields.custom.value_icon_1 != blank %}
+    <div class="flex justify-center">
+      <i class="material-icons-outlined mr-2">
+        {{ product.metafields.custom.value_icon_1 }}
+      </i>
+      <p class="mb-0">{{ product.metafields.custom.value_text_1 }}</p>
+    </div>
+  {% endif %}
+
+  {% if product.metafields.custom.value_icon_2 != blank %}
+    <div class="flex justify-center">
+      <i class="material-icons mr-2">
+        {{ product.metafields.custom.value_icon_2 }}
+      </i>
+      <p class="mb-0">{{ product.metafields.custom.value_text_2 }}</p>
+    </div>
+  {% endif %}
+
+  {% if product.metafields.custom.value_icon_3 != blank %}
+    <div class="flex justify-center">
+      <i class="material-icons mr-2">
+        {{ product.metafields.custom.value_icon_3 }}
+      </i>
+      <p class="mb-0">{{ product.metafields.custom.value_text_3 }}</p>
+    </div>
+  {% endif %}
+</div>
+
+

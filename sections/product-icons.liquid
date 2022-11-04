@@ -1,0 +1,12 @@
+<div class="flex flex-col lg:flex-row">
+  {% for block in section.blocks %}
+    <div class="flex">
+      <i class="material-icons-outlined">
+        {{ block.settings.icon }}
+      </i>
+      <p>{{ block.settings.title }}</p>
+    </div>
+  {% endfor %}
+</div>
+
+

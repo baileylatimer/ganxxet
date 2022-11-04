@@ -49,6 +49,11 @@
             "is_tab": false
           }
         },
+        "0b8fe5aa-681f-4ab3-a499-4236ea34e426": {
+          "type": "icons",
+          "settings": {
+          }
+        },
         "tab": {
           "type": "tab",
           "settings": {
@@ -69,6 +74,12 @@
           "disabled": true,
           "settings": {
           }
+        },
+        "27fc05c2-8abd-4b04-bf76-c2c4e9d4e307": {
+          "type": "trust_badge",
+          "settings": {
+            "trust_image": "shopify:\/\/shop_images\/favicon_fb787654-ef45-42de-9f83-b9bc7b697eba.jpg"
+          }
         }
       },
       "block_order": [
@@ -79,9 +90,11 @@
         "inventory_status",
         "buy_buttons",
         "description",
+        "0b8fe5aa-681f-4ab3-a499-4236ea34e426",
         "tab",
         "contact",
-        "share"
+        "share",
+        "27fc05c2-8abd-4b04-bf76-c2c4e9d4e307"
       ],
       "settings": {
         "sku_enable": false,
@@ -137,6 +150,36 @@
         "max_width": true
       }
     },
+    "51682939-384b-41b2-b8a3-557123ff8bf5": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--16097796915363__51682939-384b-41b2-b8a3-557123ff8bf5-16675167695776bfd1-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "template--16097796915363__51682939-384b-41b2-b8a3-557123ff8bf5-16675167695776bfd1-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2 style=\"margin-bottom: -5rem\">Reviews<\/h2>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16097796915363__51682939-384b-41b2-b8a3-557123ff8bf5-16675167695776bfd1-0",
+        "template--16097796915363__51682939-384b-41b2-b8a3-557123ff8bf5-16675167695776bfd1-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
     "1667515068d38e95b6": {
       "type": "apps",
       "blocks": {
@@ -186,6 +229,7 @@
     "main",
     "79bc44de-2d27-4c0e-9a92-5d9d0b3ba5d2",
     "sub",
+    "51682939-384b-41b2-b8a3-557123ff8bf5",
     "1667515068d38e95b6",
     "product-recommendations",
     "recently-viewed",

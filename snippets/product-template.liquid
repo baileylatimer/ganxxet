@@ -141,6 +141,7 @@
             </div>
 
             <div data-product-blocks>
+              
               {%- capture form_id -%}AddToCartForm-{{ section_id }}-{{ product.id }}{%- endcapture -%}
               {%- for block in blocks -%}
                 {%- case block.type -%}
@@ -152,6 +153,8 @@
                     <div class="product-block" {{ block.shopify_attributes }}>
                       {{ block.settings.text }}
                     </div>
+                  {%- when 'icons' -%}
+                    {% render 'product-icons' %}
                   {%- when 'tab' -%}
                     {% assign tab_id = block.id | append: product.id %}
                     {% capture tab_content %}
@@ -435,6 +438,8 @@
             -%}
           </div>
         {%- endunless -%}
+
+        {% render 'product-icons' %}
       </div>
     </div>
   </div>
