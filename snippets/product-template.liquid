@@ -95,7 +95,7 @@
 
 
           <div class="product-single__meta">
-            <div class="product-block product-block--header">
+            <div class="product-block product-block--header text-sm">
               {%- if settings.show_breadcrumbs and isModal != true -%}
                 {%- render 'breadcrumbs' -%}
               {%- endif -%}
@@ -445,12 +445,3 @@
 </div>
 
 
-<div class="yotpo yotpo-main-widget page-width"
-data-product-id="{{ product.id }}"
-data-name="{{ product.title | escape }}"
-data-url="{{ shop.url }}{{ product.url }}"
-data-image-url="{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}"
-data-price="{{ variant.price | money_without_currency }}"
-data-currency="{{ shop.currency }}"
-data-description="{{ product.description | escape }}">
-</div>
