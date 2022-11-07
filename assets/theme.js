@@ -11,6 +11,8 @@
   });
 */
 
+
+
 window.theme = window.theme || {};
 window.Shopify = window.Shopify || {};
 
@@ -33,7 +35,13 @@ if (theme.config.isTouch) {
 
 if (console && console.log) {
   console.log('Impulse theme ('+theme.settings.themeVersion+') by ARCHΞTYPE | Learn more at https://archetypethemes.co');
+  console.log('ALERT');
 }
+
+console.log('ALERT');
+document.querySelector(".display-text").innerText = document.querySelector(".display-text").innerText.toLowerCase().replace(/\b(\w)/g, x => x.toUpperCase());
+document.querySelector(".grid-product__title").innerText = document.querySelector(".grid-product__title").innerText.toLowerCase().replace(/\b(\w)/g, x => x.toUpperCase());
+
 
 theme.recentlyViewed = {
   recent: {}, // will store handle+url of recent products

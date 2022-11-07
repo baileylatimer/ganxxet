@@ -73,6 +73,7 @@ a {
 .display-text {
   font-family: 'Lyon Display', Times New Roman,Georgia,"serif",system-ui !important;
   text-transform: capitalize !important;
+  font-weight: 400;
 }
 
 .display-italic {
@@ -163,3 +164,12 @@ button {
   letter-spacing: 0 !important;
   text-transform: uppercase;
 }
+
+
+.image-wrap .animate-me, .image-wrap img:not([role="presentation"]), .image-wrap svg {
+  opacity: 1 !important;
+}
+
+/* .slideshow__slide .hero__image-wrapper, [data-aos="hero__animation"] .hero__image-wrapper {
+  opacity: 1;
+} */

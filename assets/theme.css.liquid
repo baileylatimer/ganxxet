@@ -2305,9 +2305,10 @@ pre{
 }
 
 .label,label:not(.variant__button-label):not(.text-label){
-  text-transform:uppercase;
-  letter-spacing:0.3em;
-  font-size:0.8em;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0 !important;
+  text-transform: uppercase;
 }
 
 label{
@@ -8687,7 +8688,7 @@ html[dir=rtl] .grid-product__content{
 .grid-product__title--heading{
   font-family:var(--typeHeaderPrimary),var(--typeHeaderFallback);
   font-weight:var(--typeHeaderWeight);
-  letter-spacing:var(--typeHeaderSpacing);
+  /* letter-spacing:var(--typeHeaderSpacing); */
   line-height:var(--typeHeaderLineHeight);
 }
 
@@ -8701,9 +8702,9 @@ html[dir=rtl] .grid-product__content{
 }
 
 [data-type_product_capitalize=true] .grid-product__title{
-    text-transform:uppercase;
+    /* text-transform:uppercase; */
     font-size:calc(var(--typeBaseSize) - 2px);
-    letter-spacing:0.2em
+    /* letter-spacing:0.2em */
   }
 
 @media only screen and (max-width:768px){
