@@ -9,7 +9,7 @@
             "top_subheading": "New arrivals",
             "title": "Shop new colors",
             "title_size": 50,
-            "subheading": "",
+            "subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "link": "shopify:\/\/collections\/all",
             "link_text": "Shop now",
             "link_2": "",
@@ -55,6 +55,20 @@
         "autoplay_speed": 7
       }
     },
+    "92214754-9d6d-4ddd-a3ce-1dbb7e2c2611": {
+      "type": "featured-collection",
+      "settings": {
+        "subtitle": "Shop our",
+        "title": "Best Sellers",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+        "home_featured_products": "best-sellers",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
     "featured-collections": {
       "type": "featured-collections",
       "blocks": {
@@ -63,6 +77,7 @@
           "settings": {
             "collection": "cotton-cord-single-strand-4-6-8-mm",
             "title": "4mm Single Strand",
+            "text": "",
             "focal_point": "center center"
           }
         },
@@ -71,6 +86,7 @@
           "settings": {
             "collection": "cotton-rope-small",
             "title": "2mm 3ply Rope",
+            "text": "",
             "focal_point": "center center"
           }
         },
@@ -79,6 +95,7 @@
           "settings": {
             "collection": "cotton-rope-3mm",
             "title": "3mm 3ply Rope",
+            "text": "",
             "focal_point": "center center"
           }
         },
@@ -87,6 +104,7 @@
           "settings": {
             "collection": "cotton-rope-5-mm-3-ply",
             "title": "5mm 3ply Rope",
+            "text": "",
             "focal_point": "center center"
           }
         },
@@ -95,6 +113,7 @@
           "settings": {
             "collection": "cotton-viscose-roll",
             "title": "Viscose Cotton Fiber",
+            "text": "",
             "focal_point": "center center"
           }
         },
@@ -103,6 +122,7 @@
           "settings": {
             "collection": "cotton-air",
             "title": "Braided Cords",
+            "text": "",
             "focal_point": "center center"
           }
         }
@@ -116,8 +136,9 @@
         "60e66763-02c9-4f34-8b00-399d6b4530ad"
       ],
       "settings": {
-        "subtitle": "A few of our",
-        "title": "Favorites",
+        "subtitle": "Shop by",
+        "title": "Category",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
         "divider": false,
         "per_row": 3,
         "enable_gutter": true
@@ -204,7 +225,7 @@
         "title": "Unique Quality at unbeatable prices",
         "align_text": "center",
         "desktop_columns_per_row": 4,
-        "icon_color": "#000",
+        "icon_color": "#000000",
         "button_label": "",
         "button_link": "",
         "divider": false
@@ -213,6 +234,7 @@
   },
   "order": [
     "slideshow",
+    "92214754-9d6d-4ddd-a3ce-1dbb7e2c2611",
     "featured-collections",
     "e47a1961-0fc3-48d4-a843-948205e60cd7",
     "29ff4c6c-8a3c-47d5-b59a-23d42f836ff6"

@@ -1,8 +1,23 @@
 {%- assign per_row = section.settings.per_row -%}
 {%- assign product_limit = per_row | times: section.settings.rows -%}
 {%- assign collection = collections[section.settings.home_featured_products] -%}
+{%- assign titleToCamelCase = product.title -%}
+{%- assign letters = titleToCamelCase | replace: ' ', '-' | split: '-' -%}
+
+{%- capture camelCase -%}
+    {%- for letter in letters -%}
+        {%- if forloop.index == 0 -%}
+            {{ letter }}
+        {%- else -%}
+            {{ letter | capitalize }}
+        {%- endif -%}
+    {%- endfor -%}
+ {%- endcapture -%}
+
 
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+
+
 
 <div
   id="CollectionSection-{{ section.id }}"
@@ -61,7 +76,7 @@
                         <div class="image-wrap">{{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}</div>
                       </div>
                       <div class="grid-product__meta">
-                        <div class="grid-product__title">{{ 'home_page.onboarding.product_title' | t }}</div>
+                        <div class="grid-product__title">{{ 'home_page.onboarding.product_title' | downcase }}</div>
                         <div class="grid-product__price">$29</div>
                       </div>
                     </a>

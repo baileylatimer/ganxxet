@@ -6,6 +6,21 @@ Arguments
 - [collection]: collection object
 {% endcomment %}
 
+{%- assign titleToCamelCase = product.title -%}
+{%- assign letters = titleToCamelCase | replace: ' ', '-' | split: '-' -%}
+
+{%- capture camelCase -%}
+    {%- for letter in letters -%}
+        {%- if forloop.index == 0 -%}
+            {{ letter }}
+        {%- else -%}
+            {{ letter | capitalize }}
+        {%- endif -%}
+    {%- endfor -%}
+ {%- endcapture -%}
+
+
+
 {%- liquid
   unless per_row
     assign per_row = 4
@@ -163,7 +178,7 @@ Arguments
       </div>
 
       <div class="grid-product__meta">
-        <div class="grid-product__title grid-product__title--{{ settings.type_product_style }}">{{ product.title }}</div>
+        <div class="grid-product__title grid-product__title--{{ settings.type_product_style }}"> {{ camelCase }}</div>
         {%- if settings.vendor_enable -%}
           <div class="grid-product__vendor">{{ product.vendor }}</div>
         {%- endif -%}
