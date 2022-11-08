@@ -77,6 +77,7 @@
         },
         "27fc05c2-8abd-4b04-bf76-c2c4e9d4e307": {
           "type": "trust_badge",
+          "disabled": true,
           "settings": {
             "trust_image": "shopify:\/\/shop_images\/favicon_fb787654-ef45-42de-9f83-b9bc7b697eba.jpg"
           }
