@@ -10,12 +10,15 @@
   data-section-type="featured-collection">
   {%- if section.settings.title != blank -%}
     <div class="page-width">
-      <div class="section-header{% if section.settings.view_all %}{% unless settings.type_headers_align_text %} section-header--with-link{% endunless %}{% endif %}">
-        <h2 class="section-header__title">
-          {{ section.settings.title }}
-        </h2>
-        {%- if section.settings.view_all and section.settings.rows == 1 -%}
-          <a href="{{ collections[section.settings.home_featured_products].url }}" class="btn btn--secondary btn--small section-header__link">{{ 'collections.general.all_of_collection' | t }}</a>
+      <div class="section-header  lg:w-6/12 mx-auto">
+        {%- if section.settings.subtitle != blank -%}
+          <p class="hero__top-subtitle display-italic">{{ section.settings.subtitle }}</p>
+        {%- endif -%}
+        {%- if section.settings.title != blank -%}
+          <h2 class="section-header__title">{{ section.settings.title }}</h2>
+        {%- endif -%}
+        {%- if section.settings.text != blank -%}
+          <p class="text-center">{{ section.settings.text }}</p>
         {%- endif -%}
       </div>
     </div>
@@ -112,9 +115,20 @@
   "settings": [
     {
       "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Subtitle"
+    },
+    {
+      "type": "text",
       "id": "title",
       "label": "t:sections.featured-collection.settings.title.label",
       "default": "Featured collection"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text"
     },
     {
       "type": "collection",

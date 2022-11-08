@@ -122,6 +122,15 @@ a {
   }
 }
 
+image-wrap .animate-me, .image-wrap img:not([role="presentation"]), .image-wrap svg {
+  opacity: 1 !important;
+}
+
+
+
+/* LAYOUT 
+============ */
+
 .grid {
   display: block;
 }
@@ -163,3 +172,4 @@ button {
   letter-spacing: 0 !important;
   text-transform: uppercase;
 }
+

@@ -1,13 +1,16 @@
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
 <div class="page-width">
-  <div class="section-header">
-  {%- if section.settings.subtitle != blank -%}
-  <p class="hero__top-subtitle display-italic">{{ section.settings.subtitle }}</p>
-  {%- endif -%}
-  {%- if section.settings.title != blank -%}
-  <h2 class="section-header__title">{{ section.settings.title }}</h2>
-  {%- endif -%}
+  <div class="section-header lg:w-6/12 mx-auto">
+    {%- if section.settings.subtitle != blank -%}
+      <p class="hero__top-subtitle display-italic">{{ section.settings.subtitle }}</p>
+    {%- endif -%}
+    {%- if section.settings.title != blank -%}
+      <h2 class="section-header__title">{{ section.settings.title }}</h2>
+    {%- endif -%}
+    {%- if section.settings.text != blank -%}
+      <p class="text-center">{{ section.settings.text }}</p>
+    {%- endif -%}
   </div>
 
 
@@ -81,6 +84,11 @@
       "default": "Collection list"
     },
     {
+      "type": "text",
+      "id": "text",
+      "label": "Text"
+    },
+    {
       "type": "checkbox",
       "id": "divider",
       "label": "t:sections.featured-collections.settings.divider.label",
@@ -135,6 +143,11 @@
           "type": "text",
           "id": "title",
           "label": "t:sections.featured-collections.blocks.collection.settings.title.label"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
         },
         {
           "type": "select",
