@@ -129,6 +129,11 @@
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
 }
 
+.columns-6 {
+  -moz-columns: 6;
+       columns: 6
+}
+
 .flex-col {
   flex-direction: column
 }
@@ -252,6 +257,10 @@
 }
 
 @media (min-width: 1024px) {
+  .lg\:w-6\/12 {
+    width: 50%
+  }
+
   .lg\:flex-row {
     flex-direction: row
   }
