@@ -93,7 +93,8 @@ a {
 }
 
 [data-type_product_capitalize="true"] .grid-product__title,
-.grid-product__price {
+.grid-product__price,
+.site-nav__dropdown-link {
   text-transform: capitalize;
   letter-spacing: 0;
   font-weight: 400;
@@ -197,3 +198,12 @@ button {
 }
 
 
+/* NAV 
+============ */
+.megamenu__colection-image {
+  background-position: center;
+  }
+
+  .site-nav__dropdown-link:hover {
+    background-color: var(--color-primary-light);
+  }
