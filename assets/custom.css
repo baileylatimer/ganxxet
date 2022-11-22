@@ -178,7 +178,7 @@ image-wrap .animate-me, .image-wrap img:not([role="presentation"]), .image-wrap 
   margin-top: 1rem;
 }
 
-.yotpo-icon-star {
+.yotpo-icon-star, .yotpo-icon-empty-star, .yotpo-icon-half-star {
   color: var(--color-contrast-higher) !important;
 }
 
