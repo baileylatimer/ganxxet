@@ -307,6 +307,9 @@
       "recent_products": "Recently viewed",
       "reviews": "Reviews"
     },
+    "icons": {
+        "name": "Icons"
+    },
     "product": {
       "description": "Description",
       "in_stock_label": "In stock, ready to ship",

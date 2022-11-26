@@ -4015,6 +4015,12 @@
         }
       }
     },
+    "icons": {
+      "name": "Icons"
+    },
+    "overview": {
+      "name": "Overview"
+    },
     "trust_badge": {
       "name": "Trust badge",
       "settings": {

@@ -155,6 +155,66 @@
                     </div>
                   {%- when 'icons' -%}
                     {% render 'product-icons' %}
+
+
+
+                  {%- when 'overview' -%}
+                    {% assign tab_id = block.id | append: product.id %}
+                    {% capture tab_content %}
+                      {{ block.settings.content }}
+                      {{ block.settings.page.content }}
+                    {% endcapture %}
+                    {% unless product.metafields.custom.overview == blank %}
+                      <div class="product-block product-block--tab" {{ block.shopify_attributes }}>
+                          <div class="collapsibles-wrapper collapsibles-wrapper--border-bottom">
+                            <button type="button"
+                              class="label collapsible-trigger collapsible-trigger-btn collapsible-trigger-btn--borders collapsible--auto-height{% if force_open %} is-open{% endif %}" aria-controls="Product-content-{{ id }}"
+                              {% if force_open %}aria-expanded="true"{% endif %}>
+                              Overview
+                              {%- render 'collapsible-icons' -%}
+                            </button>
+                            <div id="Product-content-{{ id }}"
+                              class="collapsible-content collapsible-content--all{% if force_open %} is-open{% endif %}"
+                              {% if force_open %}style="height: auto;"{% endif %}>
+                              <div class="collapsible-content__inner rte">
+                                {{ product.metafields.custom.overview }}
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    {% endunless %}
+
+
+
+                    {%- when 'specs' -%}
+                    {{ product.metafields.custom.specs }}
+                      {% assign tab_id = block.id | append: product.id %}
+                      {% capture tab_content %}
+                        {{ block.settings.content }}
+                        {{ block.settings.page.content }}
+                      {% endcapture %}
+                      {% unless product.metafields.custom.specs == blank %}
+                        <div class="product-block product-block--tab" {{ block.shopify_attributes }}>
+                            <div class="collapsibles-wrapper collapsibles-wrapper--border-bottom">
+                              <button type="button"
+                                class="label collapsible-trigger collapsible-trigger-btn collapsible-trigger-btn--borders collapsible--auto-height{% if force_open %} is-open{% endif %}" aria-controls="Product-content-{{ id }}"
+                                {% if force_open %}aria-expanded="true"{% endif %}>
+                                Tech Specs
+                                {%- render 'collapsible-icons' -%}
+                              </button>
+                              <div id="Product-content-{{ id }}"
+                                class="collapsible-content collapsible-content--all{% if force_open %} is-open{% endif %}"
+                                {% if force_open %}style="height: auto;"{% endif %}>
+                                <div class="collapsible-content__inner rte">
+                                  {{ product.metafields.custom.specs }} <h1>ZZZ</h1>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      {% endunless %}
+
+
+
                   {%- when 'tab' -%}
                     {% assign tab_id = block.id | append: product.id %}
                     {% capture tab_content %}
