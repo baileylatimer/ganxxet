@@ -228,7 +228,7 @@
                 <div class="hero__text-wrap">
                   <div class="page-width">
                     <div class="hero__text-content {{ block.settings.text_align }}">
-                      <div class="hero__text-shadow">
+                      <div class="hero__text-shadow lg:w-6/12">
                         {%- unless block.settings.top_subheading == blank -%}
                           <div class="hero__top-subtitle display-italic">
                             <div class="animation-cropper"><div class="animation-contents">
@@ -247,7 +247,9 @@
                           {%- unless block.settings.subheading == blank -%}
                             <div class="hero__subtitle">
                               <div class="animation-cropper"><div class="animation-contents">
-                                {{ block.settings.subheading | escape }}
+                                <p>
+                                  {{ block.settings.subheading | escape }}
+                                </p>
                               </div></div>
                             </div>
                           {%- endunless -%}

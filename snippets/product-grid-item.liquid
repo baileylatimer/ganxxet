@@ -6,6 +6,21 @@ Arguments
 - [collection]: collection object
 {% endcomment %}
 
+{%- assign titleToCamelCase = product.title -%}
+{%- assign letters = titleToCamelCase | replace: ' ', '-' | split: '-' -%}
+
+{%- capture camelCase -%}
+    {%- for letter in letters -%}
+        {%- if forloop.index == 0 -%}
+            {{ letter }}
+        {%- else -%}
+            {{ letter | capitalize }}
+        {%- endif -%}
+    {%- endfor -%}
+ {%- endcapture -%}
+
+
+
 {%- liquid
   unless per_row
     assign per_row = 4
@@ -51,6 +66,8 @@ Arguments
 
 <div class="grid__item grid-product {{ grid_item_width }}{% if quick_shop_enable %} grid-product__has-quick-shop{% endif %}" data-aos="row-of-{{ per_row }}" data-product-handle="{{ product.handle }}" data-product-id="{{ product.id }}">
   <div class="grid-product__content">
+
+    {% render 'sin-wishlist-product-grid-heart' %}
     {%- if has_custom_label -%}
       <div class="grid-product__tag grid-product__tag--custom">
         {{ custom_label }}
@@ -163,7 +180,7 @@ Arguments
       </div>
 
       <div class="grid-product__meta">
-        <div class="grid-product__title grid-product__title--{{ settings.type_product_style }}">{{ product.title }}</div>
+        <h3 class="mt-3 grid-product__title grid-product__title--{{ settings.type_product_style }}"> {{ camelCase }}</h3>
         {%- if settings.vendor_enable -%}
           <div class="grid-product__vendor">{{ product.vendor }}</div>
         {%- endif -%}

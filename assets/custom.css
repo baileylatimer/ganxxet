@@ -1,4 +1,5 @@
 :root {
+  --color-primaryt: #000;
   --color-primary-light: #EAE5E1;
   --color-contrast-higher: #161616;
 }
@@ -93,6 +94,14 @@ a {
   font-weight: normal;
 }
 
+[data-type_product_capitalize="true"] .grid-product__title,
+.grid-product__price,
+.site-nav__dropdown-link {
+  text-transform: capitalize;
+  letter-spacing: 0;
+  font-weight: 400;
+  }
+
 /* MEDIA
 ==================== */
 @media screen and (min-width: 768px) {
@@ -123,6 +132,31 @@ a {
   }
 }
 
+image-wrap .animate-me, .image-wrap img:not([role="presentation"]), .image-wrap svg {
+  opacity: 1 !important;
+}
+
+/* Product card img */
+.grid__image-ratio img {
+  filter: brightness(.94);
+}
+
+.grid-product__content img {
+  transition: all .5s cubic-bezier(.215,.61,.355,1);
+}
+
+.grid-product__content:hover img {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transition: all .5s cubic-bezier(.215,.61,.355,1);
+}
+
+/* LAYOUT 
+============ */
+
 .grid {
   display: block;
 }
@@ -146,7 +180,7 @@ a {
   margin-top: 1rem;
 }
 
-.yotpo-icon-star {
+.yotpo-icon-star, .yotpo-icon-empty-star, .yotpo-icon-half-star {
   color: var(--color-contrast-higher) !important;
 }
 
@@ -163,6 +197,7 @@ button {
   font-weight: bold;
   letter-spacing: 0 !important;
   text-transform: uppercase;
+<<<<<<< HEAD
 }
 
 
@@ -173,3 +208,395 @@ button {
 /* .slideshow__slide .hero__image-wrapper, [data-aos="hero__animation"] .hero__image-wrapper {
   opacity: 1;
 } */
+||||||| merged common ancestors
+}
+=======
+}
+
+
+/* NAV 
+============ */
+.megamenu__colection-image {
+  background-position: center;
+  }
+
+  .site-nav__dropdown-link:hover {
+    background-color: var(--color-primary-light);
+  }
+
+/* SWYM Wishlist
+============= */
+.swym-inject {
+  .swym-btn-container:not(#swym-show) {
+  display: none !important;
+  }
+}
+
+.swym-button::after {
+  opacity: 1 !important;
+}
+
+.swym-action-btns button:after {
+  display:none !important
+}
+
+/* overlay */
+.swym-ui-component .swym-modal-bg {
+  background: rgba(0,0,0,.7) !important;
+}
+
+.swym-details {
+  color: var(--color-primary) !important;
+}
+
+.swym-ui-components .swym-bg-2, .swym-ui-component .swym-bg-2, .swim-tooltip {
+  background: var(--color-primary) !important;
+  font: var(--button-font) !important;
+}
+
+
+.swym-ui-components .swym-color-2, .swym-ui-component .swym-color-2 {
+color: var(--color-primary) !important;
+}
+
+.swym-ui-component .swym-add-wishlist-modal .swym-modal-content .swym-new-wishlist-btn {
+border: .637151px solid var(--color-primary) !important;
+font: var(--button-font) !important;
+}
+
+.swym-ui-component .swym-add-wishlist-modal .swym-modal-content .swym-product-name {
+color: var(--color-primary) !important;
+text-transform: uppercase !important;
+font: var(--subheading-font);
+}
+
+.swym-ui-component *, .swym-ui-component .swym-is-button, .swym-ui-component .swym-is-anchor, .swym-ui-component .swym-title, .swym-ui-component .swym-heading, .swym-ui-component .swym-label {
+font-family: var(--body-font-family) !important;
+}
+
+/* hide hr */
+.swym-ui-component .swym-add-wishlist-modal .swym-modal-content .swym-product-title::after {
+display: none;
+}
+
+/* hide add to list text */
+.swym-ui-component .swym-add-wishlist-modal .swym-modal-content .swym-wishlist-items-title {
+display: none;
+}
+
+.swym-close-btn::before {
+color: var(--color-primary);
+}
+
+
+.swym-ui-component .swym-add-wishlist-modal .swym-modal-content .swym-wishlist-items-title {
+color: var(--color-primary) !important;
+}
+
+.swym-ui-component .swym-add-wishlist-modal .swym-modal-content .swym-product-title::after {
+background: var(--color-primary) !important;
+}
+
+.swym-ui-component .swym-add-wishlist-modal .swym-modal-content .swym-new-wishlist-item .swym-new-wishlist-name {
+color: var(--color-primary) !important;
+border: 1px solid var(--color-primary) !important;
+}
+
+.swym-btn-container, .grid-item__content-item {
+button:after {
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+  border: none !important;
+  animation: none !important;
+}
+}
+
+.swym-heart:after {
+transform: scale(1.55);
+}
+
+// PDP Positioning
+
+/* Add to wishlist text */
+.swym-wishlist-cta {
+padding-left: 4px !important;
+font: var(--body-font) !important;
+text-transform: uppercase;
+letter-spacing: var(--body-letter-spacing);
+font-weight: 600 !important;
+font-size: 12px !important;
+position: relative;
+bottom: 0.1em
+}
+
+.swym-btn-container {
+&:hover {
+  button {
+  color: var(--btn-hover-bg-color) !important;
+  }
+}
+}
+
+
+[data-block-id="8a43d88d-cf24-43bc-8882-02a6ee094b4d"] {
+  display: flex;
+  justify-content: flex-end;
+}
+
+// #AddToCart-product-template {
+//   margin-right: 45px;
+// }
+
+.swym-button-bar {
+  margin-right: 0 !important;
+}
+
+.swym-tooltip {
+  display: none !important;
+}
+
+
+
+
+
+// Product Grid Items
+.swym-add-to-wishlist-view-product::after {
+position: relative !important;
+top: auto;
+left: auto;
+}
+
+.grid-item__content-item.grid-item__snippet.grid-item__content-item--before {
+display: flex;
+justify-content: flex-end;
+}
+
+.grid-item__link {
+margin-top: 80px;
+}
+
+// Header
+i.icon-swym-wishlist {
+  font-family: 'swym-font';
+  font-style: normal;
+  vertical-align: middle;
+  }
+  i.icon-swym-wishlist+span {
+  vertical-align: middle;
+  }
+  i.icon-swym-wishlist:after {
+  content: '';
+  font-size: 130%;
+  line-height: 18px;
+  text-align: center;
+  display: inline;
+  }
+  /*content rendered after swym is ready to avoid showing block/invalid chars*/
+  .swym-ready i.icon-swym-wishlist:after {
+  content: '\f004';
+  }
+
+/* Wishlists modal */
+.swym-wishlist-name,
+.swym-empty-wishlist-list,
+.swym-wishlist-list-header,
+.swym-wishlist-main-title,
+.swym-empty-wishlist-title,
+.swym-empty-wishlist-text,
+.swym-title,
+.swym-product-price,
+.swym-nav,
+.swym-value,
+.swym-text-heading
+{
+color: var(--color-primary) !important;
+}
+
+.swym-title,
+.swym-value {
+font: var(--product_grid_item_title-font) !important;
+text-transform: var(--product_grid_item_title-text-transform) !important;
+letter-spacing: var(--product_grid_item_title-letter-spacing) !important;
+text-align: var(--product-grid-item-title-text-align) !important;
+}
+
+.swym-wishlist-list-header, .swym-wishlist-main-title {
+font: var(--heading-font) !important;
+text-transform: var(--heading-text-transform) !important;
+letter-spacing: var(--heading-letter-spacing) !important;
+}
+
+.swym-ui-component .swym-wishlist-container-title-bar {
+background: transparent !important;
+}
+
+
+.swym-ui-components .swym-bg-4, .swym-ui-component .swym-bg-4 {
+background: var(--color-primary) !important;
+}
+
+.swym-empty-wishlist-continue-btn,
+.swym-add-to-cart-btn,
+.swym-add-mailing-list-btn,
+.swym-wishlist-add-to-cart-btn {
+font: var(--button-font) !important;
+text-transform: var(--button-text-transform) !important;
+letter-spacing: var(--button-letter-spacing) !important;
+}
+
+
+
+.swym-ui-component .swym-wishlist-grid .swym-wishlist-item .swym-title {
+margin: 10px 0 0 0 !important;
+/* padding-left: 20px !important */
+}
+
+.swym-back-btn {
+  display: flex !important;
+}
+
+.swym-wishlist-grid {
+  padding-left: 40px !important
+}
+
+.swym-ui-component .swym-wishlist-grid .swym-wishlist-item .swym-product-price {
+padding: 0 0 var(--theme-grid-size--0-5) !important;
+margin-bottom: var(--theme-grid-size--0-5);
+}
+
+.swym-ui-component .swym-wishlist-grid .swym-wishlist-item {
+background: transparent !important;
+border: none !important;
+}
+
+.swym-ui-component .swym-wishlist-grid .swym-wishlist-item .swym-variant-title-spacer {
+display: none !important;
+}
+
+.swym-title, .swym-value {
+line-height: 1.6em !important;
+}
+
+.swym-wishlist-grid .swym-wishlist-item {
+width: 33% !important;
+}
+/* .swym-wishlist-image-wrapper {
+height: 350px !important;
+} */
+
+.swym-ui-component .swym-wishlist-grid {
+margin: 0 !important;
+}
+
+.swym-ui-component .swym-wishlist-grid .swym-wishlist-item .swym-variant-title {
+margin: var(--theme-grid-size--0-5) 0 !important;
+}
+
+.swym-ui-component .swym-wishlist-grid .swym-wishlist-item .swym-add-to-cart-btn {
+height: var(--input-group-height);
+}
+/* 
+.swym-ui-component .swym-wishlist-grid .swym-wishlist-item .swym-title {
+margin: var(--theme-grid-size--1) 0 0 0 !important;
+} */
+
+/* hide spinner */
+.swym-is-button::after {
+display: none !important;
+}
+
+.swym-icon::before {
+color: var(--color-primary) !important;
+}
+
+
+.swym-ui-component .swym-wishlist-product-detail-content .swym-wishlist-product-title {
+font: var(--pdp_product_title-font) !important;
+letter-spacing: var(--pdp_product_title-letter-spacing) !important;
+font-size: var(--theme-font-size--5) !important;
+}
+
+.swym-wishlist-product-detail-text-container .swym-product-final-price {
+color: #565a5c !important;
+font-size: var(--theme-font-size--4) !important;
+}
+
+.swym-btn-container[data-position="default"] .swym-button {
+  color: #000 !important;
+}
+
+.swym-btn-container .swym-button.swym-add-to-wishlist:not(.swym-loaded) {
+  display: block;
+}
+
+.swym-button {
+  min-width: 0;
+}
+
+.swym-button:hover {
+  background-color: transparent !important;
+}
+
+.swym-button::after {
+  display: none !important
+}
+
+
+#swym-show .swym-button {
+  width: 20px !important;
+}
+
+.swym-added {
+  display: ;
+}
+
+.swym-wishlist-cta {
+  position: absolute;
+  left: -35px;
+  color: transparent
+}
+
+.swym-wishlist-cta::after {
+  content: 'Add to wishlist';
+  display: block;
+  width: 250px;
+  position: absolute;
+  top: 4px;
+  color: #000
+}
+
+.icon-heart-2 {
+  position: absolute;
+  top: 7px;
+  left: -14px;
+}
+@media screen and (max-width: 768px) {
+  .swym-button-bar {
+    margin-left: -155px
+  }
+}
+
+.swym-btn-container .swym-button.swym-added :not(.swym-tooltip) {
+  opacity: 1 !important;
+}
+
+/* Modal */
+.swym-ui-components .swym-color-4, .swym-ui-component .swym-color-4 {
+  color: #000 !important
+}
+
+.swym-btn-container:nth-of-type(2) {
+  display: none !important;
+}
+
+
+/* PLP
+--------- */
+.swym-button.swym-add-to-wishlist-view-product {
+  position: absolute;
+  top: 5px;
+  z-index: 99;
+  left: 10px;
+ }
+ 
+>>>>>>> glitch-fix-2
