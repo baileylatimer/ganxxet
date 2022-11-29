@@ -6,6 +6,71 @@
   endfor
 -%}
 
+
+<script>   
+  // Declare boostPFSThemeConfig
+  var boostPFSThemeConfig = {     
+      label: {       
+        sorting: {% assign temp = 'collections.sorting.title' | t  %} {% unless temp contains 'translation missing'  %} {{ temp | json }} {% else %} "Sorting" {% endunless %},       
+        sorting_best_selling: {% assign temp = collection.sort_options[1].name %} {% unless temp == nil %} {{ temp | json }} {% else %} "Best Selling" {% endunless %},       
+        sorting_manual: {% assign temp = collection.sort_options[0].name %} {% unless temp == nil %} {{ temp | json }} {% else %} "Featured" {% endunless %},       
+        sorting_title_ascending: {% assign temp = collection.sort_options[2].name %} {% unless temp == nil %} {{ temp | json }} {% else %} "Alphabetically, A-Z" {% endunless %},       
+        sorting_title_descending: {% assign temp = collection.sort_options[3].name %} {% unless temp == nil %} {{ temp | json }} {% else %} "Alphabetically, Z-A" {% endunless %},       
+        sorting_price_ascending: {% assign temp = collection.sort_options[4].name %} {% unless temp == nil %} {{ temp | json }} {% else %} "Lowest Price" {% endunless %},       
+        sorting_price_descending: {% assign temp = collection.sort_options[5].name %} {% unless temp == nil %} {{ temp | json }} {% else %} "Highest Price" {% endunless %},       
+        sorting_date_ascending: {% assign temp = collection.sort_options[6].name %} {% unless temp == nil  %} {{ temp | json }} {% else %} "Date, Old to New" {% endunless %},       
+        sorting_date_descending: {% assign temp = collection.sort_options[7].name %} {% unless temp == nil  %} {{ temp | json }} {% else %} "Date, New to Old" {% endunless %},       
+        sorting_relevance: {% assign temp = 'collections.sorting.relevance' | t %} {% unless temp contains 'translation missing'  %} {{ temp | json }} {% else %} "Relevance" {% endunless %},        
+        sale: {{ 'products.product.on_sale' | t | json }},       
+        sale_price: {{ 'products.product.sale_price' | t | json }},       
+        sold_out: {{ 'products.product.sold_out' | t | json }},       
+        vendor: {{ 'products.product.vendor' | t |json }},       
+        regular_price: {{ 'products.product.regular_price' | t | json }},       
+        items_with_count_one: {{ 'collections.general.items_with_count.one' | t | json}},       
+        items_with_count_other: {{ 'collections.general.items_with_count.other' | t | json }},       
+        current_page: {{ 'general.pagination.current_page' | t | json }}, 
+      },     
+      custom: {       
+        // Add custom value here  
+        products_per_page: 20,   
+        product_grid_class: '',
+      }   
+    };// Declare Templates
+  var boostPFSTemplate = {
+      'soldOutClass': ' sold-out',
+      'saleClass': ' on-sale',
+      'soldOutLabelHtml': {% render 'boost-pfs-filter-html', layout: 'soldOutLabelHtml' %},
+      'saleLabelHtml': {% render 'boost-pfs-filter-html', layout: 'saleLabelHtml' %},
+      'tagLabelHtml': {% render 'boost-pfs-filter-html', layout: 'tagLabelHtml' %},
+      'vendorHtml': {% render 'boost-pfs-filter-html', layout: 'vendorHtml' %},
+      // Grid Template
+      'productGridItemHtml': {% render 'boost-pfs-filter-html', layout: 'productGridItemHtml' %},
+      // For List View
+      // List Template
+      'productListItemHtml': {% render 'boost-pfs-filter-html', layout: 'productListItemHtml' %},
+      // End For List View
+      // Pagination Template
+      'previousActiveHtml': {% render 'boost-pfs-filter-html', layout: 'previousActiveHtml' %},
+      'previousDisabledHtml': {% render 'boost-pfs-filter-html', layout: 'previousDisabledHtml' %},
+      'nextActiveHtml': {% render 'boost-pfs-filter-html', layout: 'nextActiveHtml' %},
+      'nextDisabledHtml': {% render 'boost-pfs-filter-html', layout: 'nextDisabledHtml' %},
+      'pageItemHtml': {% render 'boost-pfs-filter-html', layout: 'pageItemHtml' %},
+      'pageItemSelectedHtml': {% render 'boost-pfs-filter-html', layout: 'pageItemSelectedHtml' %},
+      'pageItemRemainHtml': {% render 'boost-pfs-filter-html', layout: 'pageItemRemainHtml' %},
+      'paginateHtml': {% render 'boost-pfs-filter-html', layout: 'paginateHtml' %},
+      // Sorting Template
+      'sortingHtml': {% render 'boost-pfs-filter-html', layout: 'sortingHtml' %},
+      // Show Limit Template
+      'showLimitHtml': {% render 'boost-pfs-filter-html', layout: 'showLimitHtml' %},
+      // Breadcrumb Template
+      'breadcrumbHtml': {% render 'boost-pfs-filter-html', layout: 'breadcrumbHtml' %},
+      'breadcrumbDivider': {% render 'boost-pfs-filter-html', layout: 'breadcrumbDivider' %},
+      'breadcrumbItemLink': {% render 'boost-pfs-filter-html', layout: 'breadcrumbItemLink' %},
+      'breadcrumbItemSelected': {% render 'boost-pfs-filter-html', layout: 'breadcrumbItemSelected' %},
+  };
+  </script>
+
+
 <div
   class="collection-content"
   data-section-id="{{ section.id }}"
@@ -59,9 +124,11 @@
                     mobile_flush_grid: block.settings.mobile_flush_grid,
                     quick_shop_enable: settings.quick_shop_enable
                   %}
-                  {%- if paginate.pages > 1 -%}
+                  <!-- {%- if paginate.pages > 1 -%}
                     {%- render 'pagination', paginate: paginate -%}
-                  {%- endif -%}
+                  {%- endif -%} -->
+                  <div class="boost-pfs-filter-bottom-pagination"></div>
+                  <div class="boost-pfs-filter-load-more"></div>
                 </div>
               {%- endcase -%}
             </div>
