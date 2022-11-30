@@ -439,6 +439,8 @@ var numberQuickViewModalLoaded = 0;
     //   jQ('.js-drawer-open-collection-filters').removeClass('btn--tertiary-active');
     //   jQ('.js-drawer-open-collection-filters > span').html(boostPFSConfig.label.filter);
     // }
-    theme.initQuickShop();
+    if (typeof theme.initQuickShop == 'function') {
+      theme.initQuickShop();
+    }
   };
 })();
