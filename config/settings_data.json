@@ -61,6 +61,7 @@
     "cart_type": "drawer",
     "cart_notes_enable": false,
     "cart_terms_conditions_enable": false,
+    "favicon": "shopify:\/\/shop_images\/logo--favicon.png",
     "checkout_logo_position": "left",
     "checkout_logo_size": "small",
     "checkout_body_background_color": "#ffffff",
@@ -115,9 +116,9 @@
           "announcement_above_header": true,
           "toolbar_menu": "",
           "toolbar_social": true,
-          "show_locale_selector": true,
-          "show_currency_selector": true,
-          "show_currency_flags": true
+          "show_locale_selector": false,
+          "show_currency_selector": false,
+          "show_currency_flags": false
         }
       },
       "footer": {

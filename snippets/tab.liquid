@@ -9,7 +9,7 @@
     <button type="button"
       class="label collapsible-trigger collapsible-trigger-btn collapsible-trigger-btn--borders collapsible--auto-height{% if force_open %} is-open{% endif %}" aria-controls="Product-content-{{ id }}"
       {% if force_open %}aria-expanded="true"{% endif %}>
-      {{ title }}
+      <h3 style="font-size: 1em; margin-bottom: 0;">{{ title }}</h3>
       {%- render 'collapsible-icons' -%}
     </button>
     <div id="Product-content-{{ id }}"

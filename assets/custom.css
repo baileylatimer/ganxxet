@@ -595,8 +595,19 @@ font-size: var(--theme-font-size--4) !important;
 .swym-button.swym-add-to-wishlist-view-product {
   position: absolute;
   top: 5px;
-  z-index: 99;
+  z-index: 2;
   left: 10px;
  }
+
+ .boost-pfs-filter-option .boost-pfs-filter-option-content .boost-pfs-filter-option-amount {
+  font-size: .8em;
+  }
+
+  .boost-pfs-filter-option-value {
+  font-size: .8em;
+  }
+
+  .grid__image-ratio img.grid__image-contain {
+    object-fit: cover;
+    }
  
->>>>>>> glitch-fix-2

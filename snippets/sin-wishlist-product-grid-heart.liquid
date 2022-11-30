@@ -1,3 +1,6 @@
  <!-- Swym Wishlist Plus EPI Button-->
- <button data-with-epi="true" class="swym-button swym-add-to-wishlist-view-product product_{{product.id}}" data-swaction="addToWishlist" data-product-id="{{product.id | json}}" data-variant-id="{{product.variants[0].id}}" data-product-url="{{ shop.url }}{{ product.url }}">{% render 'icon-heart' %}</button>
+ <button data-with-epi="true" class="swym-button swym-custom swym-add-to-wishlist-view-product product_{{product.id}}" data-swaction="addToWishlist" data-product-id="{{product.id | json}}" data-variant-id="{{product.variants[0].id}}" data-product-url="{{ shop.url }}{{ product.url }}">{% render 'icon-heart' %}</button>
  <!-- Swym Wishlist Plus EPI Button-->
+ <script>
+   console.log( 'TEST' {{product.id | json}})
+ </script>

@@ -129,6 +129,8 @@
                     {{ 'home_page.onboarding.product_title' | t }}
                   {%- endunless -%}
                 </h1>
+
+                <h2 class="h4 pt-2">{{product.type}}</h2>
               {%- endif -%}
 
               {%- if sku_enable -%}
@@ -261,14 +263,14 @@
                         <span data-a11y-price class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
                       {%- endif -%}
 
-                      <h1 data-product-price
-                        class="product__price display-text{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}">
+                      <p data-product-price
+                        class="h1 product__price display-text{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}">
                         {%- unless product.empty? -%}
                           {{ current_variant.price | money }}
                         {%- else -%}
                           {{ 1999 | money }}
                         {%- endunless -%}
-                      </h1>
+                      </p>
 
                       {%- if settings.product_save_amount -%}
                         {%- if settings.product_save_type == 'dollar' -%}
