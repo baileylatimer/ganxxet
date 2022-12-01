@@ -611,3 +611,28 @@ font-size: var(--theme-font-size--4) !important;
     object-fit: cover;
     }
  
+.grid-product__colors {
+  display: none;
+}
+
+
+.heart-box {
+  position: absolute; 
+  top: -7px;
+  left: -36px
+}
+@media screen and (min-width: 768px) {
+  .heart-box {
+    top: -4px;
+  }
+}
+
+
+.swym-btn-container .btn::after {
+  background-image: none !important;
+  height: 0% !important;
+  opacity: 0%;
+}
+
+.swym-btn-container .btn {
+  background-color: transparent !important
