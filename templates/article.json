@@ -3,22 +3,88 @@
     "main": {
       "type": "article-template",
       "settings": {
-        "image_hero": false,
+        "image_hero": true,
         "blog_show_tags": false,
         "blog_show_date": false,
-        "blog_show_comments": true,
+        "blog_show_comments": false,
         "blog_show_author": false,
         "social_sharing_blog": true
+      }
+    },
+    "ea1d6c80-019e-442f-8a20-09d60a245de8": {
+      "type": "featured-product",
+      "disabled": true,
+      "blocks": {
+        "template--16128741015715__ea1d6c80-019e-442f-8a20-09d60a245de8-166994613516a59861-0": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--16128741015715__ea1d6c80-019e-442f-8a20-09d60a245de8-166994613516a59861-1": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "template--16128741015715__ea1d6c80-019e-442f-8a20-09d60a245de8-166994613516a59861-2": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "template--16128741015715__ea1d6c80-019e-442f-8a20-09d60a245de8-166994613516a59861-3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16128741015715__ea1d6c80-019e-442f-8a20-09d60a245de8-166994613516a59861-0",
+        "template--16128741015715__ea1d6c80-019e-442f-8a20-09d60a245de8-166994613516a59861-1",
+        "template--16128741015715__ea1d6c80-019e-442f-8a20-09d60a245de8-166994613516a59861-2",
+        "template--16128741015715__ea1d6c80-019e-442f-8a20-09d60a245de8-166994613516a59861-3"
+      ],
+      "settings": {
+        "featured_product": "cotton-rope-zero-waste-2-mm-3-ply-raspberry-color",
+        "divider": false,
+        "sku_enable": false,
+        "image_position": "left",
+        "image_size": "medium",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
+    "485f700e-819e-4ae4-a3be-96cb9398722f": {
+      "type": "featured-collection",
+      "settings": {
+        "subtitle": "Shop our",
+        "title": "Best sellers",
+        "text": "",
+        "home_featured_products": "best-sellers",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
       }
     },
     "blog-posts": {
       "type": "blog-posts",
       "settings": {
-        "title": "Related",
+        "title": "Recommended Articles",
         "blog": "ganxxet-news",
         "post_limit": 3,
         "blog_show_tags": false,
-        "blog_show_date": true,
+        "blog_show_date": false,
         "blog_show_comments": false,
         "blog_show_author": false,
         "view_all": true,
@@ -29,6 +95,8 @@
   },
   "order": [
     "main",
+    "ea1d6c80-019e-442f-8a20-09d60a245de8",
+    "485f700e-819e-4ae4-a3be-96cb9398722f",
     "blog-posts"
   ]
 }

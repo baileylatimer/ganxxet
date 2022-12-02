@@ -45,36 +45,25 @@
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {
             "is_tab": false
           }
         },
+        "0b8fe5aa-681f-4ab3-a499-4236ea34e426": {
+          "type": "icons",
+          "settings": {
+          }
+        },
         "d15f7517-ebbc-43fc-9490-1d134f138ab1": {
           "type": "overview",
-          "disabled": true,
           "settings": {
+            "force_open": true
           }
         },
         "cdce6af1-9f6d-4911-a791-00d21b253708": {
           "type": "specs",
-          "disabled": true,
           "settings": {
-          }
-        },
-        "3d956d9f-a7ea-4097-8af0-88e3d3a63325": {
-          "type": "tab",
-          "settings": {
-            "title": "Overview",
-            "content": "<p>Create extraordinary handmade projects with our <strong>best-selling<\/strong> macrame natural cotton rope. Ganxxet high quality rope is <strong>eco-friendly<\/strong>, entirely made with <strong>recycled cotton<\/strong>. This is the <strong>highest quality up-cycled cotton rope in the market, <\/strong>made from cotton fabrics from the garment industry. To get the color, <strong>we don’t dye the fiber<\/strong>,<br\/> we choose similar color garments, we break down the fabric to cotton <br\/>fiber again and then we spin the fiber to create the cotton thread. <br\/> With this manufacturing process, we can reduce the water usage in half <br\/>and reduce very significantly the CO2 emissions.<\/p><p>By choosing this cotton cord, <strong>you are helping eliminate waste that will otherwise end up in our landfills. <\/strong>The natural rope <strong>can be dyed<\/strong> with either natural or synthetic dyes.<\/p><p>It will give the structure you’re looking for, highlighting every smallest detail you passionately create. <strong>Extremely strong<\/strong> if<br\/> your piece needs to bear significant weight. Excellent for your neutral<br\/> macrame projects in natural color cotton. This macrame rope is also <br\/>very <strong>flexible and soft<\/strong> in your hands that makes it so <strong>easy to work with<\/strong>.<br\/> You’ll successfully achieve that sensational fringe on your macrame <br\/>wall hangings, since it can be unraveled and frayed easily. <\/p>",
-            "page": ""
-          }
-        },
-        "ed5ee0cf-8d5a-46fe-bdc3-7daeb48894e6": {
-          "type": "tab",
-          "settings": {
-            "title": "Tech Specs",
-            "content": "<p>Composition: recycled cotton<\/p><p>Length: 50 m - 164 ft - 55 yards<\/p><p>Weight: 1.12 Lb - 700 g ± 5%<\/p><p>Diameter: 5 mm - 0.19 inch (13\/64”)<\/p><p>Perfect for Macrame \/ Weaving: This is a very versatile rope for macrame. It’s perfect for macrame plant hangers, when you look for precision and definition in the knots, and <br\/>also for geometric macrame and macrame-weaving.<\/p>",
-            "page": ""
           }
         },
         "tab": {
@@ -100,11 +89,6 @@
             "phone": false
           }
         },
-        "0b8fe5aa-681f-4ab3-a499-4236ea34e426": {
-          "type": "icons",
-          "settings": {
-          }
-        },
         "share": {
           "type": "share",
           "disabled": true,
@@ -127,14 +111,12 @@
         "inventory_status",
         "buy_buttons",
         "description",
+        "0b8fe5aa-681f-4ab3-a499-4236ea34e426",
         "d15f7517-ebbc-43fc-9490-1d134f138ab1",
         "cdce6af1-9f6d-4911-a791-00d21b253708",
-        "3d956d9f-a7ea-4097-8af0-88e3d3a63325",
-        "ed5ee0cf-8d5a-46fe-bdc3-7daeb48894e6",
         "tab",
         "77e24b9c-8d4d-4452-b3f9-7118e6a8d80a",
         "contact",
-        "0b8fe5aa-681f-4ab3-a499-4236ea34e426",
         "share",
         "27fc05c2-8abd-4b04-bf76-c2c4e9d4e307"
       ],
