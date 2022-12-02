@@ -197,10 +197,12 @@ image-wrap .animate-me, .image-wrap img:not([role="presentation"]), .image-wrap 
   margin-top: 1rem;
 }
 
+@media only screen and (max-width: 960px) {
 .standalone-bottomline {
   display: flex;
   justify-content: center;
   }
+}
 
 .yotpo-icon-star, .yotpo-icon-empty-star, .yotpo-icon-half-star {
   color: var(--color-contrast-higher) !important;
