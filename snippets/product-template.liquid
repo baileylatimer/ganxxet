@@ -162,57 +162,26 @@
 
                   {%- when 'overview' -%}
                     {% assign tab_id = block.id | append: product.id %}
-                    {% capture tab_content %}
-                      {{ block.settings.content }}
-                      {{ block.settings.page.content }}
+                    {% capture tab_content_1 %}
+                    {{ product.metafields.custom.overview }}
                     {% endcapture %}
                     {% unless product.metafields.custom.overview == blank %}
-                      <div class="product-block product-block--tab" {{ block.shopify_attributes }}>
-                          <div class="collapsibles-wrapper collapsibles-wrapper--border-bottom">
-                            <button type="button"
-                              class="label collapsible-trigger collapsible-trigger-btn collapsible-trigger-btn--borders collapsible--auto-height{% if force_open != blank %} is-open{% endif %}" aria-controls="Product-content-{{ id }}"
-                              {% if force_open != blank %}aria-expanded="true"{% endif %}>
-                              <h3 style="font-size: 1em; margin-bottom: 0;">Overview</h3>
-                              {%- render 'collapsible-icons' -%}
-                            </button>
-                            <div id="Product-content-{{ id }}"
-                              class="collapsible-content collapsible-content--all{% if force_open != blank %} is-open{% endif %}"
-                              {% if force_open != blank %}style="height: auto;"{% endif %}>
-                              <div class="collapsible-content__inner rte">
-                                {{ product.metafields.custom.overview }}
-                              </div>
-                            </div>
-                          </div>
-                      </div>
+                    <div class="product-block product-block--tab" {{ block.shopify_attributes }}>
+                      {%- render 'tab-overview', id: tab_id, title: 'Overview', content: tab_content_1  -%}
+                    </div>
                     {% endunless %}
 
 
 
                     {%- when 'specs' -%}
-                    {{ product.metafields.custom.specs }}
                       {% assign tab_id = block.id | append: product.id %}
-                      {% capture tab_content %}
-                        {{ block.settings.content }}
-                        {{ block.settings.page.content }}
+                      {% capture tab_content_2 %}
+                      {{ product.metafields.custom.specs }}
                       {% endcapture %}
-                      {% unless product.metafields.custom.specs == blank %}
-                        <div class="product-block product-block--tab" {{ block.shopify_attributes }}>
-                            <div class="collapsibles-wrapper collapsibles-wrapper--border-bottom">
-                              <button type="button"
-                                class="label collapsible-trigger collapsible-trigger-btn collapsible-trigger-btn--borders collapsible--auto-height{% if force_open != blank %} is-open{% endif %}" aria-controls="Product-content-{{ id }}"
-                                {% if force_open != blank %}aria-expanded="true"{% endif %}>
-                                Tech Specs
-                                {%- render 'collapsible-icons' -%}
-                              </button>
-                              <div id="Product-content-{{ id }}"
-                                class="collapsible-content collapsible-content--all{% if force_open != blank %} is-open{% endif %}"
-                                {% if force_open != blank %}style="height: auto;"{% endif %}>
-                                <div class="collapsible-content__inner rte">
-                                  {{ product.metafields.custom.specs }} <h1>ZZZ</h1>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
+                      {% unless product.metafields.custom.overview == blank %}
+                      <div class="product-block product-block--tab" {{ block.shopify_attributes }}>
+                        {%- render 'tab-specs', id: tab_id, title: 'Tech Specs', content: tab_content_2  -%}
+                      </div>
                       {% endunless %}
 
 
