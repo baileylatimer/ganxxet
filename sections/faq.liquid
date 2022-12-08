@@ -1,3 +1,7 @@
+{% if product.metafields.custom.faq_title_1 != blank %}
+  
+
+
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
 <div class="page-width page-width--narrow">
@@ -79,6 +83,8 @@
 </div>
 
 {%- if section.settings.divider -%}</div>{%- endif -%}
+
+{% endif %}
 
 {% schema %}
 {

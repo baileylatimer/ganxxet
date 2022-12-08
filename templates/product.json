@@ -247,6 +247,40 @@
       "type": "collection-return",
       "settings": {
       }
+    },
+    "c65cc9e3-8fba-400c-b226-c615ba5a30c1": {
+      "type": "faq",
+      "blocks": {
+        "template--16128741507235__c65cc9e3-8fba-400c-b226-c615ba5a30c1-1670536946a508e978-0": {
+          "type": "question",
+          "settings": {
+            "title": "{{ product.metafields.custom.faq_title_1.value }}",
+            "text": "<p>{{ product.metafields.custom.faq_desc_1 | metafield_tag }}<\/p>"
+          }
+        },
+        "template--16128741507235__c65cc9e3-8fba-400c-b226-c615ba5a30c1-1670536946a508e978-1": {
+          "type": "question",
+          "settings": {
+            "title": "{{ product.metafields.custom.faq_title_2.value }}",
+            "text": "<p>{{ product.metafields.custom.faq_desc_2 | metafield_tag }}<\/p>"
+          }
+        },
+        "f6feee7e-7a71-4066-b2b9-02fe2f23f6de": {
+          "type": "question",
+          "settings": {
+            "title": "{{ product.metafields.custom.faq_title_3.value }}",
+            "text": "<p>{{ product.metafields.custom.faq_desc_3 | metafield_tag }}<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16128741507235__c65cc9e3-8fba-400c-b226-c615ba5a30c1-1670536946a508e978-0",
+        "template--16128741507235__c65cc9e3-8fba-400c-b226-c615ba5a30c1-1670536946a508e978-1",
+        "f6feee7e-7a71-4066-b2b9-02fe2f23f6de"
+      ],
+      "settings": {
+        "title": "FAQs"
+      }
     }
   },
   "order": [
@@ -257,6 +291,7 @@
     "1667515068d38e95b6",
     "product-recommendations",
     "recently-viewed",
-    "collection-return"
+    "collection-return",
+    "c65cc9e3-8fba-400c-b226-c615ba5a30c1"
   ]
 }
