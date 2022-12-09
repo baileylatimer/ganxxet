@@ -46,10 +46,45 @@
         "enable_color_swatches": false,
         "enable_sort": true
       }
+    },
+    "1670549729b08c1d06": {
+      "type": "apps",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "407dffc1-94c6-4237-b23a-0c303edd5b50": {
+      "type": "faq",
+      "blocks": {
+        "template--16128741146787__407dffc1-94c6-4237-b23a-0c303edd5b50-167054972556789d64-0": {
+          "type": "question",
+          "settings": {
+            "title": "{{ collection.metafields.custom.faq_title_1.value }}",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.{{ collection.metafields.custom.faq_desc_1 | metafield_tag }}<\/p>"
+          }
+        },
+        "template--16128741146787__407dffc1-94c6-4237-b23a-0c303edd5b50-167054972556789d64-1": {
+          "type": "question",
+          "settings": {
+            "title": "{{ collection.metafields.custom.faq_title_2.value }}",
+            "text": "<p>{{ collection.metafields.custom.faq_desc_2 | metafield_tag }}<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16128741146787__407dffc1-94c6-4237-b23a-0c303edd5b50-167054972556789d64-0",
+        "template--16128741146787__407dffc1-94c6-4237-b23a-0c303edd5b50-167054972556789d64-1"
+      ],
+      "settings": {
+        "title": "FAQs"
+      }
     }
   },
   "order": [
     "collection-header",
-    "main-collection"
+    "main-collection",
+    "1670549729b08c1d06",
+    "407dffc1-94c6-4237-b23a-0c303edd5b50"
   ]
 }
