@@ -1,6 +1,5 @@
-{% if product.metafields.custom.faq_title_1 or collection.metafields.custom.faq_title_1 != blank %}
+{% if collection.metafields.custom.faq_title_1 != blank %}
   
-
 
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
@@ -60,15 +59,19 @@
 
           {% when 'question'%}
             <div>
-              <button type="button" class="collapsible-trigger collapsible-trigger--inline collapsible--auto-height text-left" aria-controls="FAQ-content-{{ block.id }}">
+              <button type="button" class="collapsible-trigger collapsible-trigger--inline collapsible--auto-height text-left" aria-controls="FAQ-content-{{ block.id }}" aria-expanded="true">
                 {%- render 'collapsible-icons-alt', no_circle: true -%}
                 <span>{{ block.settings.title }}</span>
               </button>
-              <div id="FAQ-content-{{ block.id }}" class="collapsible-content collapsible-content--all">
-                <div class="collapsible-content__inner collapsible-content__inner--faq rte ml-10">
+       
+              
+           
+                <div class="ml-10">
                   {{ block.settings.text }}
                 </div>
-              </div>
+                  
+       
+                  
             </div>
         {% endcase %}
       </div>
@@ -88,7 +91,7 @@
 
 {% schema %}
 {
-  "name": "t:sections.faq.name",
+  "name": "FAQ Collections",
   "class": "index-section",
   "settings": [
     {
@@ -158,8 +161,11 @@
   ],
   "presets": [
     {
-      "name": "t:sections.faq.presets.faq.name",
+      "name": "FAQ Collections",
       "blocks": [
+        {
+          "type": "question"
+        },
         {
           "type": "question"
         },
