@@ -660,3 +660,51 @@ font-size: var(--theme-font-size--4) !important;
 
 .swym-btn-container .btn {
   background-color: transparent !important
+}
+
+
+/* BLOG
+========= */
+
+.nav--blog {
+  border-bottom: 1px solid black;
+  text-transform: uppercase;
+}
+
+.nav--blog .main-menu__link {
+  width:-webkit-fit-content;
+  width:-moz-fit-content;
+  width:fit-content;
+  list-style: none;
+ }
+ 
+ @media (min-width: 900px) {
+ .main-menu__link {
+  font-size: .9rem;
+  padding: 1rem 1.33rem;
+}
+ }
+
+.main-menu__link {
+  color: #000;
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  text-decoration: none;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.collection-title {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 2rem; }
+  @media (min-width: 900px) {
+    .collection-title {
+      padding: 2rem 3rem; } }
+  @media (min-width: 1200px) {
+    .collection-title {
+      padding: 4rem 4rem; } }
