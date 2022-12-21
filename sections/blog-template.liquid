@@ -49,6 +49,11 @@
       {%- endif -%}
     </header>
 
+    {% if section.settings.description != blank %}
+      <p class="rte collection__description lg:px-40 mb-0">{{ section.settings.description }}</p>
+    {% endif %}
+
+
     <div class="grid grid--uniform">
       {%- for article in blog.articles -%}
         {%- render 'article-grid-item', article: article, grid_item_width: 'medium-up--one-third', per_row: '3', image_size: section.settings.blog_image_size -%}
@@ -68,6 +73,11 @@
 {
   "name": "t:sections.blog-template.name",
   "settings": [
+  {
+    "type": "text",
+    "id": "description",
+    "label": "Description"
+  },
     {
       "type": "checkbox",
       "id": "blog_show_tag_filter",
