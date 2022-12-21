@@ -708,3 +708,14 @@ font-size: var(--theme-font-size--4) !important;
   @media (min-width: 1200px) {
     .collection-title {
       padding: 4rem 4rem; } }
+
+    .parallax-container::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 1;
+    }
