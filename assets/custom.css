@@ -719,3 +719,28 @@ font-size: var(--theme-font-size--4) !important;
       background-color: rgba(0, 0, 0, 0.3);
       z-index: 1;
     }
+
+
+  .article__body h2,
+  .article__body h2 span,
+  .article__body h3,
+  .article__body h3 span,
+  .article__body h4,
+  .article__body h4 span,
+  .article__body h5,
+  .article__body h5 span,
+  .article__body h6,
+  .article__body h6 span {
+    font-family: 'Lyon Display', sans-serif, Times New Roman,Georgia,"serif",system-ui !important;
+    text-transform: capitalize !important;
+    font-weight: 400;
+    font-size: calc(var(--typeHeaderSize)*.85);
+    color: #000 !important
+  }
+
+  .article__body p,
+  .article__body p span,
+  .article__body li,
+  .article__body li span {
+    color: #000 !important
+  }

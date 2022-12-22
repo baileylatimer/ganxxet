@@ -49,8 +49,8 @@
       {%- endif -%}
     </header>
 
-    {% if section.settings.description != blank %}
-      <p class="rte collection__description lg:px-40 mb-0">{{ section.settings.description }}</p>
+    {% if blog.metafields.custom.description != blank %}
+      <p class="rte collection__description lg:px-40 mb-0">{{ blog.metafields.custom.description }}</p>
     {% endif %}
 
 
