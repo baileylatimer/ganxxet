@@ -230,6 +230,32 @@
         "button_link": "",
         "divider": false
       }
+    },
+    "2b55975f-0d92-4932-8358-1f25ebcf90bc": {
+      "type": "faq",
+      "blocks": {
+        "template--16129098449059__2b55975f-0d92-4932-8358-1f25ebcf90bc-1671727595a7b3708e-0": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "template--16129098449059__2b55975f-0d92-4932-8358-1f25ebcf90bc-1671727595a7b3708e-1": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16129098449059__2b55975f-0d92-4932-8358-1f25ebcf90bc-1671727595a7b3708e-0",
+        "template--16129098449059__2b55975f-0d92-4932-8358-1f25ebcf90bc-1671727595a7b3708e-1"
+      ],
+      "settings": {
+        "title": "FAQs"
+      }
     }
   },
   "order": [
@@ -237,6 +263,7 @@
     "92214754-9d6d-4ddd-a3ce-1dbb7e2c2611",
     "featured-collections",
     "e47a1961-0fc3-48d4-a843-948205e60cd7",
-    "29ff4c6c-8a3c-47d5-b59a-23d42f836ff6"
+    "29ff4c6c-8a3c-47d5-b59a-23d42f836ff6",
+    "2b55975f-0d92-4932-8358-1f25ebcf90bc"
   ]
 }
