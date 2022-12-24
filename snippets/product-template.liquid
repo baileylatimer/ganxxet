@@ -142,6 +142,7 @@
               {%- endif -%}
             </div>
 
+            
             <div data-product-blocks>
               
               {%- capture form_id -%}AddToCartForm-{{ section_id }}-{{ product.id }}{%- endcapture -%}
@@ -163,11 +164,11 @@
                   {%- when 'overview' -%}
                     {% assign tab_id = block.id | append: product.id %}
                     {% capture tab_content_1 %}
-                    {{ product.metafields.custom.overview }}
+                    {{ product.description }}
                     {% endcapture %}
-                    {% unless product.metafields.custom.overview == blank %}
+                    {% unless product.description == blank %}
                     <div class="product-block product-block--tab" {{ block.shopify_attributes }}>
-                      {%- render 'tab-overview', id: tab_id, title: 'Overview', content: tab_content_1  -%}
+                      {%- render 'tab-overview', id: tab_id, title: 'Overview', content: product.description  -%}
                     </div>
                     {% endunless %}
 
