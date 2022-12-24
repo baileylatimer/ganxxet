@@ -744,3 +744,8 @@ font-size: var(--theme-font-size--4) !important;
   .article__body li span {
     color: #000 !important
   }
+
+  .table-of-contents {
+    padding: 1em;
+    border: 2px solid var(--color-primary-light);
+  }
