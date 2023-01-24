@@ -12,6 +12,13 @@
 */
 
 
+document.querySelectorAll('.site-nav__link').forEach(link => {
+  link.addEventListener('click', function() {
+    console.log('site-nav__link clicked');
+  });
+});
+
+
 
 window.theme = window.theme || {};
 window.Shopify = window.Shopify || {};
