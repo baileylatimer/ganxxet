@@ -4,16 +4,17 @@
       "type": "collection-header",
       "settings": {
         "enable": true,
-        "collection_image_enable": true,
+        "collection_image_enable": false,
         "parallax": true,
         "parallax_direction": "top"
       }
     },
-    "main-collection": {
-      "type": "main-collection",
+    "main-collection-boost-pfs-original": {
+      "type": "main-collection-boost-pfs-original",
       "blocks": {
         "collection_description": {
           "type": "collection_description",
+          "disabled": true,
           "settings": {
           }
         },
@@ -46,133 +47,10 @@
         "enable_color_swatches": false,
         "enable_sort": true
       }
-    },
-    "1670549729b08c1d06": {
-      "type": "apps",
-      "settings": {
-        "full_width": false,
-        "space_around": true
-      }
-    },
-    "407dffc1-94c6-4237-b23a-0c303edd5b50": {
-      "type": "faq",
-      "disabled": true,
-      "blocks": {
-        "template--16128741146787__407dffc1-94c6-4237-b23a-0c303edd5b50-167054972556789d64-0": {
-          "type": "question",
-          "settings": {
-            "title": "{{ collection.metafields.custom.faq_title_1.value }}",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.{{ collection.metafields.custom.faq_desc_1 | metafield_tag }}<\/p>"
-          }
-        },
-        "template--16128741146787__407dffc1-94c6-4237-b23a-0c303edd5b50-167054972556789d64-1": {
-          "type": "question",
-          "settings": {
-            "title": "{{ collection.metafields.custom.faq_title_2.value }}",
-            "text": "<p>{{ collection.metafields.custom.faq_desc_2 | metafield_tag }}<\/p>"
-          }
-        },
-        "8038d3a0-4afb-40d6-a678-cff00aed029b": {
-          "type": "question",
-          "settings": {
-            "title": "{{ collection.metafields.custom.faq_title_3.value }}",
-            "text": "<p>{{ collection.metafields.custom.faq_desc_3 | metafield_tag }}<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--16128741146787__407dffc1-94c6-4237-b23a-0c303edd5b50-167054972556789d64-0",
-        "template--16128741146787__407dffc1-94c6-4237-b23a-0c303edd5b50-167054972556789d64-1",
-        "8038d3a0-4afb-40d6-a678-cff00aed029b"
-      ],
-      "settings": {
-        "title": "FAQs"
-      }
-    },
-    "167095536103d16d99": {
-      "type": "apps",
-      "settings": {
-        "full_width": false,
-        "space_around": true
-      }
-    },
-    "0bbe748d-0b65-4faf-b234-36ec44254d96": {
-      "type": "faq-2",
-      "blocks": {
-        "template--16140707037347__0bbe748d-0b65-4faf-b234-36ec44254d96-16709553565b369752-0": {
-          "type": "question",
-          "settings": {
-            "title": "{{ collection.metafields.custom.faq_title_1.value }}",
-            "text": "<p>{{ collection.metafields.custom.faq_desc_1 | metafield_tag }}<\/p>"
-          }
-        },
-        "template--16140707037347__0bbe748d-0b65-4faf-b234-36ec44254d96-16709553565b369752-1": {
-          "type": "question",
-          "settings": {
-            "title": "{{ collection.metafields.custom.faq_title_2.value }}",
-            "text": "<p>{{ collection.metafields.custom.faq_desc_2 | metafield_tag }}<\/p>"
-          }
-        },
-        "template--16140707037347__0bbe748d-0b65-4faf-b234-36ec44254d96-16709553565b369752-2": {
-          "type": "question",
-          "settings": {
-            "title": "{{ collection.metafields.custom.faq_title_3.value }}",
-            "text": "<p>{{ collection.metafields.custom.faq_desc_3 | metafield_tag }}<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--16140707037347__0bbe748d-0b65-4faf-b234-36ec44254d96-16709553565b369752-0",
-        "template--16140707037347__0bbe748d-0b65-4faf-b234-36ec44254d96-16709553565b369752-1",
-        "template--16140707037347__0bbe748d-0b65-4faf-b234-36ec44254d96-16709553565b369752-2"
-      ],
-      "settings": {
-        "title": "FAQs"
-      }
-    },
-    "57918514-ba0e-4731-ad5a-d577a4d94bd9": {
-      "type": "hotspots",
-      "disabled": true,
-      "blocks": {
-        "template--16140707037347__57918514-ba0e-4731-ad5a-d577a4d94bd9-1670955615414d5fbc-0": {
-          "type": "product",
-          "settings": {
-            "featured_product": "bamboo-deluxe-yarn-cream-color",
-            "vertical": 25,
-            "horizontal": 25
-          }
-        },
-        "template--16140707037347__57918514-ba0e-4731-ad5a-d577a4d94bd9-1670955615414d5fbc-1": {
-          "type": "product",
-          "settings": {
-            "featured_product": "",
-            "vertical": 75,
-            "horizontal": 65
-          }
-        }
-      },
-      "block_order": [
-        "template--16140707037347__57918514-ba0e-4731-ad5a-d577a4d94bd9-1670955615414d5fbc-0",
-        "template--16140707037347__57918514-ba0e-4731-ad5a-d577a4d94bd9-1670955615414d5fbc-1"
-      ],
-      "settings": {
-        "title": "Shop the look",
-        "heading_size": "h2",
-        "heading_position": "left",
-        "indent_image": false,
-        "image_position": "left",
-        "hotspot_style": "bag",
-        "hotspot_color": "#000000"
-      }
     }
   },
   "order": [
     "collection-header",
-    "main-collection",
-    "1670549729b08c1d06",
-    "407dffc1-94c6-4237-b23a-0c303edd5b50",
-    "167095536103d16d99",
-    "0bbe748d-0b65-4faf-b234-36ec44254d96",
-    "57918514-ba0e-4731-ad5a-d577a4d94bd9"
+    "main-collection-boost-pfs-original"
   ]
 }
